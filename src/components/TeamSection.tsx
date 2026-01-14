@@ -26,6 +26,18 @@ const leadership = [
     bio: "Content strategist ensuring clear communication and brand consistency across all platforms.",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
   },
+  {
+    name: "David Park",
+    title: "Lead Developer",
+    bio: "Senior software engineer specializing in React, Node.js, and cloud architecture.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+  },
+  {
+    name: "Jessica Taylor",
+    title: "UI/UX Designer",
+    bio: "Creative designer crafting intuitive interfaces and delightful user experiences.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+  },
 ];
 
 const containerVariants = {
