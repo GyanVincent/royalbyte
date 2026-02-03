@@ -14,22 +14,23 @@ const leadership = [
     bio: "Expert in agile methodologies with a track record of delivering 100+ successful projects.",
     image: "/mic.jpeg",
   },
-  /*
-  {
-    name: "Michael Chen",
-    title: "Chief Technology Officer",
-    bio: "Full-stack architect passionate about scalable systems and emerging technologies.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-  },
-  */
+  
   {
     name: "Gyan Vincent Ampaabeng Kyere",
     title: "Chief Editor",
     bio: "Content strategist ensuring clear communication and brand consistency across all platforms.",
     image: "/1000008117[1].jpg",
   },
+  
   {
-    name: "Bright",
+    name: "Mamo Eugene",
+    title: "Project supervisor",
+    bio: "Experienced project supervisor with expertise in guiding teams and driving project success. Skilled in problem-solving, communication, and delivering results.",
+    image: "/mamo.jpeg",
+  },
+  
+  {
+    name: "Avorny Bright Kwesi",
     title: "Lead Developer",
     bio: "Senior software engineer specializing in React, Node.js, and cloud architecture.",
     image: "/bright.jpg",

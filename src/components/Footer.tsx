@@ -1,4 +1,5 @@
 import { Crown, Linkedin, Twitter, Github, Instagram } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const footerLinks = {
   services: [
@@ -35,9 +36,18 @@ const socialLinks = [
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
 
   const handleResourceClick = (resourceName: string) => {
     alert(`${resourceName} is not available right now. Please check back later!`);
+  };
+
+  const handlePrivacyPolicy = () => {
+    navigate("/privacy-policy");
+  };
+
+  const handleTermsOfService = () => {
+    navigate("/terms-of-service");
   };
 
   return (
@@ -137,13 +147,13 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6">
             <button
-              onClick={() => handleResourceClick("Privacy Policy")}
+              onClick={handlePrivacyPolicy}
               className="text-muted-foreground hover:text-foreground text-sm transition-colors cursor-pointer"
             >
               Privacy Policy
             </button>
             <button
-              onClick={() => handleResourceClick("Terms of Service")}
+              onClick={handleTermsOfService}
               className="text-muted-foreground hover:text-foreground text-sm transition-colors cursor-pointer"
             >
               Terms of Service

@@ -34,14 +34,14 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    label: "Location Main Branch",
+    label: "Location, Main Branch",
     value: "Hartford, Connecticut USA",
     href: "https://maps.google.com/?q=Hartford,Connecticut,USA",
   },
   {
     icon: MapPin,
-    label: "Location Other Branch",
-    value: "Ghana, Sunyani",
+    label: "Location, Other Branch",
+    value: "Sunyani, Ghana",
     href: "https://maps.google.com/?q=Sunyani,Ghana",
   },
   

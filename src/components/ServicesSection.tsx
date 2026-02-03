@@ -90,6 +90,13 @@ const itemVariants = {
 };
 
 const ServicesSection = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="services" className="py-24 relative overflow-hidden">
       {/* Background */}
@@ -125,7 +132,8 @@ const ServicesSection = () => {
             <motion.div
               key={service.title}
               variants={itemVariants}
-              className="group relative"
+              className="group relative cursor-pointer"
+              onClick={scrollToContact}
             >
               <div className="h-full p-8 rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
                 {/* Icon */}

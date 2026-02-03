@@ -30,12 +30,17 @@ const Navbar = () => {
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+      // Close mobile menu immediately
+      setIsMobileMenuOpen(false);
+      
+      // Small delay to ensure menu closes before scrolling
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }, 100);
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -119,17 +124,13 @@ const Navbar = () => {
           >
             <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.name}
-                  href={link.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(link.href);
-                  }}
-                  className="text-foreground hover:text-primary transition-colors py-2 text-lg"
+                  onClick={() => scrollToSection(link.href)}
+                  className="text-foreground hover:text-primary transition-colors py-2 text-lg text-left w-full"
                 >
                   {link.name}
-                </a>
+                </button>
               ))}
               <Button
                 onClick={() => scrollToSection("#contact")}
