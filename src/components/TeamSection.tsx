@@ -44,7 +44,7 @@ const leadership = [
   {
     name: "Appiah Oforiwaah Rhoda",
     title: "Marketer",
-    bio: "experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
+    bio: "Experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
     image: "/appiah.jpeg",
   },
 ];
