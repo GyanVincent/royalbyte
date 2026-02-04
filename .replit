@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "bun-1.2"]
 [nix]
 channel = "stable-25_05"
 packages = ["unzip"]
@@ -36,6 +36,6 @@ externalPort = 80
 
 [deployment]
 deploymentTarget = "static"
-build = ["bash", "-c", "npm install && npm run build"]
+build = ["bash", "-c", "bun install && bun run build"]
 publicDir = "docs"
 run = ["npx", "serve", "royalbyte-main/docs", "-p", "5000"]
