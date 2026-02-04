@@ -37,9 +37,15 @@ const leadership = [
   },
   {
     name: "Punobin Raphael",
-    title: "Python Developer",
-    bio: "Python developer with expertise in building scalable apps, data science, and automation. Skilled in Django, Flask, and problem-solving.",
+    title: "Beckend Developer",
+    bio: "Experienced backend developer with expertise in building scalable APIs and server-side logic. Skilled in problem-solving, communication, and delivering results.",
     image: "/raphael.jpg",
+  },
+  {
+    name: "Appiah Oforiwaah Rhoda",
+    title: "Marketer",
+    bio: "experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
+    image: "/appiah.jpeg",
   },
 ];
 

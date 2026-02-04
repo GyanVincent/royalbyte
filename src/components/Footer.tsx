@@ -57,10 +57,10 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <a href="#home" className="flex items-center gap-2 mb-4">
-              <Crown className="w-7 h-7 text-secondary" />
-              <span className="font-display text-xl font-bold">
-                Royal<span className="text-secondary">Byte Tech</span>
-              </span>
+              <img 
+                src="/main logo SMALL.png" 
+                className="w-24 h-24 object-contain"
+              />
             </a>
             <p className="text-muted-foreground text-sm mb-6">
               Premium IT solutions for businesses that demand excellence.

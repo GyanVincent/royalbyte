@@ -67,12 +67,12 @@ const Navbar = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="relative">
-              <Crown className="w-8 h-8 text-secondary" />
-              <div className="absolute inset-0 bg-secondary/20 blur-lg rounded-full" />
+              <img 
+                src="/main logo SMALL.png" 
+                className="w-32 h-32 object-contain"
+              />
+              <div className="absolute inset-0 bg-secondary/10 blur-md rounded-full" />
             </div>
-            <span className="font-display text-2xl font-bold text-foreground">
-              Royal<span className="text-secondary">Byte Tech</span>
-            </span>
           </motion.a>
 
           {/* Desktop Navigation */}
