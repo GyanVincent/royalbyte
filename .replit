@@ -42,3 +42,4 @@ externalPort = 3000
 deploymentTarget = "static"
 build = ["bash", "-c", "cd royalbyte-main && npm install && npm run build"]
 publicDir = "royalbyte-main/docs"
+run = ["npx", "serve", "royalbyte-main/docs", "-p", "5000"]
