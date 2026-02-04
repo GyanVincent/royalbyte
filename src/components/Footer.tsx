@@ -59,7 +59,7 @@ const Footer = () => {
             <a href="#home" className="flex items-center gap-2 mb-4">
               <Crown className="w-7 h-7 text-secondary" />
               <span className="font-display text-xl font-bold">
-                Royal<span className="text-secondary">Byte</span>
+                Royal<span className="text-secondary">Byte Tech</span>
               </span>
             </a>
             <p className="text-muted-foreground text-sm mb-6">
@@ -143,7 +143,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Royal Byte. All rights reserved.
+            © {currentYear} Royal Byte Tech. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <button

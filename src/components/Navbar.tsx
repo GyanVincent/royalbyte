@@ -71,7 +71,7 @@ const Navbar = () => {
               <div className="absolute inset-0 bg-secondary/20 blur-lg rounded-full" />
             </div>
             <span className="font-display text-2xl font-bold text-foreground">
-              Royal<span className="text-secondary">Byte</span>
+              Royal<span className="text-secondary">Byte Tech</span>
             </span>
           </motion.a>
 

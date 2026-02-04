@@ -37,8 +37,8 @@ const leadership = [
   },
   {
     name: "Punobin Raphael",
-    title: "UI/UX Designer",
-    bio: "Creative designer crafting intuitive interfaces and delightful user experiences.",
+    title: "Python Developer",
+    bio: "Python developer with expertise in building scalable apps, data science, and automation. Skilled in Django, Flask, and problem-solving.",
     image: "/raphael.jpg",
   },
 ];
