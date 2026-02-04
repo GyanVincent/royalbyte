@@ -9,7 +9,7 @@ const leadership = [
     image: "/prince.JPG",
   },
   {
-    name: "Amoah Michhel Opoku",
+    name: "Amoah Michael Opoku",
     title: "Project Manager",
     bio: "Expert in agile methodologies with a track record of delivering 100+ successful projects.",
     image: "/mic.jpeg",
