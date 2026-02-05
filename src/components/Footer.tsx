@@ -92,6 +92,7 @@ const Footer = () => {
                   {social.label === "YouTube" && <img src="/youtube logo.png" alt="YouTube" className="w-5 h-5" />}
                   {social.label === "Facebook" && <img src="/facebook logo.png" alt="Facebook" className="w-5 h-5" />}
                   {social.label === "WhatsApp" && <img src="/whatsapp logo.png" alt="WhatsApp" className="w-5 h-5" />}
+                  {social.label === "GitHub" && <Github className="w-5 h-5" />}
                 </a>
               ))}
             </div>
