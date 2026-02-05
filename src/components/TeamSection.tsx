@@ -24,7 +24,7 @@ const leadership = [
   
   {
     name: "Mamo Eugene",
-    title: "Project supervisor",
+    title: "Project Supervisor",
     bio: "Experienced project supervisor with expertise in guiding teams and driving project success. Skilled in problem-solving, communication, and delivering results.",
     image: "/mamo.jpeg",
   },
@@ -37,13 +37,13 @@ const leadership = [
   },
   {
     name: "Punobin Raphael",
-    title: "Beckend Developer",
+    title: "Backend Developer",
     bio: "Experienced backend developer with expertise in building scalable APIs and server-side logic. Skilled in problem-solving, communication, and delivering results.",
     image: "/raphael.jpg",
   },
   {
     name: "Appiah Oforiwaah Rhoda",
-    title: "Marketer",
+    title: "Digital Marketing ",
     bio: "Experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
     image: "/appiah.jpeg",
   },
