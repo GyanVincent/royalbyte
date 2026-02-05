@@ -2,18 +2,22 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Services", href: "#services" },
   { name: "About", href: "#about" },
   { name: "Team", href: "#team" },
+  { name: "Case Studies", href: "/case-studies", isPage: true },
+  { name: "Support", href: "/support", isPage: true },
   { name: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,23 +27,30 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      const offset = 80; // Height of the fixed navbar
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      // Close mobile menu immediately
+  const scrollToSection = (href: string, isPage: boolean = false) => {
+    if (isPage) {
+      // Navigate to the page
+      navigate(href);
       setIsMobileMenuOpen(false);
-      
-      // Small delay to ensure menu closes before scrolling
-      setTimeout(() => {
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth"
-        });
-      }, 100);
+    } else {
+      // Scroll to section
+      const element = document.querySelector(href);
+      if (element) {
+        const offset = 80; // Height of the fixed navbar
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        // Close mobile menu immediately
+        setIsMobileMenuOpen(false);
+        
+        // Small delay to ensure menu closes before scrolling
+        setTimeout(() => {
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }, 100);
+      }
     }
   };
 
@@ -82,7 +93,7 @@ const Navbar = () => {
                 href={link.href}
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection(link.href);
+                  scrollToSection(link.href, link.isPage);
                 }}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
                 whileHover={{ y: -2 }}
@@ -125,7 +136,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <button
                   key={link.name}
-                  onClick={() => scrollToSection(link.href)}
+                  onClick={() => scrollToSection(link.href, link.isPage)}
                   className="text-foreground hover:text-primary transition-colors py-2 text-lg text-left w-full"
                 >
                   {link.name}

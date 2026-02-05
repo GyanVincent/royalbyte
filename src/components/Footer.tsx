@@ -39,7 +39,21 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleResourceClick = (resourceName: string) => {
-    alert(`${resourceName} is not available right now. Please check back later!`);
+    if (resourceName === "Case Studies") {
+      navigate("/case-studies");
+    } else if (resourceName === "Support") {
+      navigate("/support");
+    } else {
+      alert(`${resourceName} is not available right now. Please check back later!`);
+    }
+  };
+
+  const handleCompanyClick = (linkName: string, href: string) => {
+    if (linkName === "Careers") {
+      navigate("/careers");
+    } else {
+      window.location.href = href;
+    }
   };
 
   const handlePrivacyPolicy = () => {
@@ -104,7 +118,7 @@ const Footer = () => {
                 <li key={link.name}>
                   {link.isNotAvailable ? (
                     <button
-                      onClick={() => handleResourceClick(link.name)}
+                      onClick={() => handleCompanyClick(link.name, link.href)}
                       className="text-muted-foreground hover:text-foreground transition-colors text-sm text-left cursor-pointer"
                     >
                       {link.name}
