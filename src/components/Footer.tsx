@@ -87,7 +87,11 @@ const Footer = () => {
                   aria-label={social.label}
                   className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
                 >
-                  <social.icon className="w-5 h-5" />
+                  {social.label === "LinkedIn" && <Linkedin className="w-5 h-5" />}
+                  {social.label === "Instagram" && <Instagram className="w-5 h-5" />}
+                  {social.label === "YouTube" && <img src="/youtube logo.png" alt="YouTube" className="w-5 h-5" />}
+                  {social.label === "Facebook" && <img src="/facebook logo.png" alt="Facebook" className="w-5 h-5" />}
+                  {social.label === "WhatsApp" && <img src="/whatsapp logo.png" alt="WhatsApp" className="w-5 h-5" />}
                 </a>
               ))}
             </div>

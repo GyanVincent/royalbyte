@@ -36,7 +36,7 @@ const leadership = [
     image: "/bright.jpg",
   },
   {
-    name: "Punobin Raphael",
+    name: "Punobyin Raphael",
     title: "Backend Developer",
     bio: "Experienced backend developer with expertise in building scalable APIs and server-side logic. Skilled in problem-solving, communication, and delivering results.",
     image: "/raphael.jpg",
