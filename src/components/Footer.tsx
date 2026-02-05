@@ -1,4 +1,4 @@
-import { Crown, Linkedin, Twitter, Github, Instagram } from "lucide-react";
+import { Crown, Linkedin, Twitter, Github, Instagram, MessageCircle, Youtube, Facebook, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const footerLinks = {
@@ -29,9 +29,11 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
- // { icon: Twitter, href: "#", label: "Twitter" },
+  // { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Github, href: "https://github.com/GyanVincent", label: "GitHub" },
   { icon: Instagram, href: "https://www.instagram.com/royal_byte_111", label: "Instagram" },
+  { icon: Youtube, href: "https://www.youtube.com/@royalbyte", label: "YouTube" },
+  { icon: Facebook, href: "https://www.facebook.com/royalbyte", label: "Facebook" },
 ];
 
 const Footer = () => {
@@ -87,12 +89,7 @@ const Footer = () => {
                   aria-label={social.label}
                   className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
                 >
-                  {social.label === "LinkedIn" && <Linkedin className="w-5 h-5" />}
-                  {social.label === "Instagram" && <Instagram className="w-5 h-5" />}
-                  {social.label === "YouTube" && <img src="/youtube logo.png" alt="YouTube" className="w-5 h-5" />}
-                  {social.label === "Facebook" && <img src="/facebook logo.png" alt="Facebook" className="w-5 h-5" />}
-                  {social.label === "WhatsApp" && <img src="/whatsapp logo.png" alt="WhatsApp" className="w-5 h-5" />}
-                  {social.label === "GitHub" && <Github className="w-5 h-5" />}
+                  <social.icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
