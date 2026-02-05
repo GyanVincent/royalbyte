@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const leadership = [
   {
@@ -129,7 +129,7 @@ const TeamSection = () => {
                     <Twitter className="w-4 h-4" />
                   </button>
                   <button className="w-8 h-8 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
-                    <Mail className="w-4 h-4" />
+                    <Instagram className="w-4 h-4" />
                   </button>
                 </div>
 
