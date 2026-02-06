@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <a href="#home" className="flex items-center gap-2 mb-4">
               <img 
-                src="/main logo SMALL.png" 
+                src="/logo.png" 
                 className="w-24 h-24 object-contain"
               />
             </a>
