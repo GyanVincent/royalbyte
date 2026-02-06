@@ -7,14 +7,18 @@ const leadership = [
     title: "Chief Executive Officer",
     bio: "Visionary leader with 12+ years in software innovation and digital transformation.",
     image: "/prince.JPG",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/royalbyte",
+    instagram: "https://www.instagram.com/royal_byte_111"
   },
   {
     name: "Amoah Michael Opoku",
     title: "Project Manager",
     bio: "Expert in agile methodologies with a track record of delivering 100+ successful projects.",
     image: "/mic.jpeg",
-    linkedin: "https://www.linkedin.com/in/michael-opoku-amoah-79955825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    linkedin: "https://www.linkedin.com/in/michael-opoku-amoah-79955825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    twitter: "https://x.com/am2amoah?s=21",
+    instagram: "https://www.instagram.com/michael_opoku_amoah"
   },
   
   {
@@ -22,7 +26,9 @@ const leadership = [
     title: "Chief Editor",
     bio: "Content strategist ensuring clear communication and brand consistency across all platforms.",
     image: "/1000008117[1].jpg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/royalbyte",
+    instagram: "https://www.instagram.com/royal_byte_111"
   },
   
   {
@@ -30,7 +36,9 @@ const leadership = [
     title: "Project Supervisor",
     bio: "Experienced project supervisor with expertise in guiding teams and driving project success. Skilled in problem-solving, communication, and delivering results.",
     image: "/mamo.jpeg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/royalbyte",
+    instagram: "https://www.instagram.com/royal_byte_111"
   },
   
   {
@@ -38,21 +46,27 @@ const leadership = [
     title: "Lead Developer",
     bio: "Senior software engineer specializing in React, Node.js, and cloud architecture.",
     image: "/bright.jpg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/royalbyte",
+    instagram: "https://www.instagram.com/royal_byte_111"
   },
   {
     name: "Punobyin Raphael",
     title: "Backend Developer",
     bio: "Experienced backend developer with expertise in building scalable APIs and server-side logic. Skilled in problem-solving, communication, and delivering results.",
     image: "/raphael.jpg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/royalbyte",
+    instagram: "https://www.instagram.com/royal_byte_111"
   },
   {
     name: "Appiah Oforiwaah Rhoda",
     title: "Digital Marketer ",
     bio: "Experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
     image: "/appiah.jpeg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    twitter: "https://x.com/royalbyte",
+    instagram: "https://www.instagram.com/royal_byte_111"
   },
 ];
 
@@ -137,12 +151,26 @@ const TeamSection = () => {
                   >
                     <Linkedin className="w-4 h-4" />
                   </a>
-                  <button className="w-8 h-8 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
-                    <Twitter className="w-4 h-4" />
-                  </button>
-                  <button className="w-8 h-8 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
-                    <Instagram className="w-4 h-4" />
-                  </button>
+                  {member.twitter && (
+                    <a 
+                      href={member.twitter} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:border-primary transition-colors"
+                    >
+                      <Twitter className="w-4 h-4" />
+                    </a>
+                  )}
+                  {member.instagram && (
+                    <a 
+                      href={member.instagram} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:border-primary transition-colors"
+                    >
+                      <Instagram className="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
 
                 {/* Decorative Border */}
