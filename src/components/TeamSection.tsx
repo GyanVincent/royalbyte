@@ -46,9 +46,9 @@ const leadership = [
     title: "Lead Developer",
     bio: "Senior software engineer specializing in React, Node.js, and cloud architecture.",
     image: "/bright.jpg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    twitter: "https://x.com/royalbyte",
-    instagram: "https://www.instagram.com/royal_byte_111"
+    linkedin: " https://www.linkedin.com/in/bright-kwesi-avornyo/",
+    twitter: "https://x.com/baavornyof24i",
+    instagram: "https://www.instagram.com/demi_doubleg/"
   },
   {
     name: "Punobyin Raphael",
