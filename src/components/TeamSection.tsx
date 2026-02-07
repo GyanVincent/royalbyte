@@ -36,7 +36,7 @@ const leadership = [
     title: "Project Supervisor",
     bio: "Experienced project supervisor with expertise in guiding teams and driving project success. Skilled in problem-solving, communication, and delivering results.",
     image: "/mamo.jpeg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:"https://www.linkedin.com/in/mamo-eugene-170230287",
     twitter: "https://x.com/royalbyte",
     instagram: "https://www.instagram.com/royal_byte_111"
   },
