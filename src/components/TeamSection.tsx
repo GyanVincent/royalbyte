@@ -7,9 +7,9 @@ const leadership = [
     title: "Chief Executive Officer",
     bio: "Visionary leader with 12+ years in software innovation and digital transformation.",
     image: "/prince.JPG",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    twitter: "https://x.com/royalbyte",
-    instagram: "https://www.instagram.com/royal_byte_111"
+    linkedin: "https://www.linkedin.com/in/prince-aboagye-611b1825b",
+    twitter: "https://x.com/doctoraboagye?s=21",
+    instagram: "https://www.instagram.com/aboagye.mr?igsh=MmF1OXRhMWp6bjJy&utm_source=qr"
   },
   {
     name: "Amoah Michael Opoku",

@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+233530335103",
-    href: "tel:+233530335103",
+    value: "+23320 830 4627",
+    href: "tel:+233208304627",
   },
   {
     icon: WhatsAppIcon,

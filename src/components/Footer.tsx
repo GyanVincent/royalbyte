@@ -32,8 +32,10 @@ const socialLinks = [
   // { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Github, href: "https://github.com/GyanVincent", label: "GitHub" },
   { icon: Instagram, href: "https://www.instagram.com/royal_byte_111", label: "Instagram" },
-  { icon: Youtube, href: "https://www.youtube.com/@royalbyte", label: "YouTube" },
+  { icon: Youtube, href: "https://youtube.com/@royalbytetech?si=Xa_RTll4FCqOQ2tt", label: "YouTube" },
   { icon: Facebook, href: "https://www.facebook.com/royalbyte", label: "Facebook" },
+  { icon: "tiktok", href: "https://www.tiktok.com/@royalbytetech?_r=1&_t=ZS-93kdegdHdHc", label: "TikTok", image: "/tik.png" },
+  
 ];
 
 const Footer = () => {
@@ -89,7 +91,11 @@ const Footer = () => {
                   aria-label={social.label}
                   className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
                 >
-                  <social.icon className="w-5 h-5" />
+                  {social.image ? (
+                    <img src={social.image} alt={social.label} className="w-5 h-5 object-contain" />
+                  ) : (
+                    <social.icon className="w-5 h-5" />
+                  )}
                 </a>
               ))}
             </div>
