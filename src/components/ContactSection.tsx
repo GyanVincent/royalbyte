@@ -29,8 +29,8 @@ const contactInfo = [
   {
     icon: WhatsAppIcon,
     label: "WhatsApp",
-    value: "+233200759566",
-    href: "https://wa.me/233200759566",
+    value: "+233208304627",
+    href: "https://wa.me/233208304627",
   },
   {
     icon: MapPin,
