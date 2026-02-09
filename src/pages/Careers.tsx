@@ -13,7 +13,6 @@ const jobOpenings = [
     location: "Remote / Accra, Ghana",
     type: "Full-time",
     experience: "5+ years",
-    salary: "$60,000 - $80,000",
     description: "We're looking for an experienced Full Stack Developer to join our growing team and help build amazing web applications for our clients.",
     responsibilities: [
       "Design and develop scalable web applications using modern technologies",
@@ -40,7 +39,6 @@ const jobOpenings = [
     location: "Remote / Accra, Ghana",
     type: "Full-time",
     experience: "3+ years",
-    salary: "$45,000 - $65,000",
     description: "Join our creative team to design beautiful and intuitive user interfaces that delight our customers and drive business success.",
     responsibilities: [
       "Create wireframes, mockups, and prototypes for web and mobile applications",
@@ -67,7 +65,6 @@ const jobOpenings = [
     location: "Remote / Accra, Ghana",
     type: "Full-time",
     experience: "4+ years",
-    salary: "$55,000 - $75,000",
     description: "We're seeking a talented Mobile App Developer to create innovative mobile applications for iOS and Android platforms.",
     responsibilities: [
       "Develop and maintain mobile applications using React Native or Flutter",
@@ -94,7 +91,6 @@ const jobOpenings = [
     location: "Remote / Accra, Ghana",
     type: "Full-time",
     experience: "2+ years",
-    salary: "$35,000 - $50,000",
     description: "Help us grow our brand and reach new customers through innovative digital marketing strategies and campaigns.",
     responsibilities: [
       "Develop and execute digital marketing campaigns across multiple channels",
@@ -437,10 +433,6 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Clock className="w-4 h-4" />
                         <span>{job.type}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <DollarSign className="w-4 h-4" />
-                        <span>{job.salary}</span>
                       </div>
                     </div>
 
