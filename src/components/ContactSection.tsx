@@ -17,8 +17,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "royalbyte111@gmail.com",
-    href: "mailto:royalbyte111@gmail.com",
+    value: "royalbytetech@gmail.com",
+    href: "mailto:royalbytetech@gmail.com",
   },
   {
     icon: Phone,
@@ -30,7 +30,7 @@ const contactInfo = [
     icon: WhatsAppIcon,
     label: "WhatsApp",
     value: "+233208304627",
-    href: "https://wa.me/233208304627",
+    href: "https://whatsapp.com/channel/0029Vb7bIc9Dp2QFJgaKwh1H",
   },
   {
     icon: MapPin,

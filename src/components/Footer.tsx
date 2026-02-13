@@ -33,7 +33,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/GyanVincent", label: "GitHub" },
   { icon: Instagram, href: "https://www.instagram.com/royal_byte_111", label: "Instagram" },
   { icon: Youtube, href: "https://youtube.com/@royalbytetech?si=Xa_RTll4FCqOQ2tt", label: "YouTube" },
-  { icon: Facebook, href: "https://www.facebook.com/royalbyte", label: "Facebook" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61587649834650", label: "Facebook" },
   { icon: "tiktok", href: "https://www.tiktok.com/@royalbytetech?_r=1&_t=ZS-93kdegdHdHc", label: "TikTok", image: "/tik.png" },
   
 ];

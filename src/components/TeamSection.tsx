@@ -42,7 +42,7 @@ const leadership = [
   },
   
   {
-    name: "Avorny Bright Kwesi",
+    name: "Avornyo Bright Kwesi",
     title: "Lead Developer",
     bio: "Senior software engineer specializing in React, Node.js, and cloud architecture.",
     image: "/bright.jpg",
@@ -60,7 +60,7 @@ const leadership = [
     instagram: "https://www.instagram.com/tipraph?igsh=ZzVqZnU0cDh4cXA5&utm_source=qr"
   },
   {
-    name: "Appiah Oforiwaah Rhoda",
+    name: "Appiah Oforiwaa Rhoda",
     title: "Digital Marketer ",
     bio: "Experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
     image: "/appiah.jpeg",
