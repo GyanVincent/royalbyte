@@ -3,21 +3,21 @@ import { useNavigate } from "react-router-dom";
 
 const footerLinks = {
   services: [
-    { name: "Website Development", href: "#services" },
-    { name: "Web Applications", href: "#services" },
-    { name: "Mobile Apps", href: "#services" },
-    { name: "UI/UX Design", href: "#services" },
-    { name: "Social Media Management", href: "#services" },
-    { name: "Event Photoshoots", href: "#services" },
-    { name: "Videography", href: "#services" },
-    { name: "Graphic Design", href: "#services" },
-    { name: "CCTV Installation", href: "#services" },
+    { name: "Website Development", href: "#/services" },
+    { name: "Web Applications", href: "#/services" },
+    { name: "Mobile Apps", href: "#/services" },
+    { name: "UI/UX Design", href: "#/services" },
+    { name: "Social Media Management", href: "#/services" },
+    { name: "Event Photoshoots", href: "#/services" },
+    { name: "Videography", href: "#/services" },
+    { name: "Graphic Design", href: "#/services" },
+    { name: "CCTV Installation", href: "#/services" },
   ],
   company: [
-    { name: "About Us", href: "#about" },
-    { name: "Our Team", href: "#team" },
+    { name: "About Us", href: "#/about" },
+    { name: "Our Team", href: "#/team" },
     { name: "Careers", href: "#", isNotAvailable: true },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "#/contact" },
   ],
   resources: [
     { name: "Blog", href: "#" },
@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
-            <a href="#home" className="flex items-center gap-2 mb-4">
+            <a href="#/home" className="flex items-center gap-2 mb-4">
               <img 
                 src="logo.png" 
                 className="w-24 h-24 object-contain"
