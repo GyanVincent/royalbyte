@@ -7,7 +7,7 @@ const leadership = [
     title: "Chief Executive Officer",
     bio: "Visionary leader with 12+ years in software innovation and digital transformation.",
     image: "/prince.JPG",
-    linkedin: "https://www.linkedin.com/in/prince-aboagye-611b1825b",
+    linkedin: "https://www.linkedin.com/in/prince-aboagye-kwame",
     twitter: "https://x.com/doctoraboagye?s=21",
     instagram: "https://www.instagram.com/aboagye.mr?igsh=MmF1OXRhMWp6bjJy&utm_source=qr"
   },
@@ -16,7 +16,7 @@ const leadership = [
     title: "Project Manager",
     bio: "Expert in agile methodologies with a track record of delivering 100+ successful projects.",
     image: "/mic.jpeg",
-    linkedin: "https://www.linkedin.com/in/michael-opoku-amoah-79955825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedin: "https://www.linkedin.com/in/michael-opoku-amoah",
     twitter: "https://x.com/am2amoah?s=21",
     instagram: "https://www.instagram.com/michael_opoku_amoah"
   },
@@ -26,7 +26,7 @@ const leadership = [
     title: "Chief Editor",
     bio: "Content strategist ensuring clear communication and brand consistency across all platforms.",
     image: "/1000008117[1].jpg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/gyan-vincent-kyere",
     twitter: "https://x.com/royalbyte",
     instagram: "https://www.instagram.com/royal_byte_111"
   },
@@ -36,7 +36,7 @@ const leadership = [
     title: "Project Supervisor",
     bio: "Experienced project supervisor with expertise in guiding teams and driving project success. Skilled in problem-solving, communication, and delivering results.",
     image: "/mamo.jpeg",
-    linkedin:"https://www.linkedin.com/in/mamo-eugene-170230287",
+    linkedin: "https://www.linkedin.com/in/mamo-eugene",
     twitter: "https://x.com/royalbyte",
     instagram: "https://www.instagram.com/royal_byte_111"
   },
@@ -46,25 +46,27 @@ const leadership = [
     title: "Lead Developer",
     bio: "Senior software engineer specializing in React, Node.js, and cloud architecture.",
     image: "/bright.jpg",
-    linkedin: " https://www.linkedin.com/in/bright-kwesi-avornyo/",
+    linkedin: "https://www.linkedin.com/in/bright-kwesi-avornyo",
     twitter: "https://x.com/baavornyof24i",
     instagram: "https://www.instagram.com/demi_doubleg/"
   },
+  
   {
     name: "Punobyin Raphael",
     title: "Backend Developer",
     bio: "Experienced backend developer with expertise in building scalable APIs and server-side logic. Skilled in problem-solving, communication, and delivering results.",
     image: "/raphael.jpg",
-    linkedin: "https://www.linkedin.com/in/raphael-tibil-punobyin-84b5a0306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedin: "https://www.linkedin.com/in/raphael-punobyin",
     twitter: "https://x.com/tipraph?s=21",
     instagram: "https://www.instagram.com/tipraph?igsh=ZzVqZnU0cDh4cXA5&utm_source=qr"
   },
+  
   {
     name: "Appiah Oforiwaa Rhoda",
-    title: "Digital Marketer ",
+    title: "Digital Marketer",
     bio: "Experienced marketer with expertise in digital marketing, social media management, and brand promotion.",
     image: "/appiah.jpeg",
-    linkedin: "https://www.linkedin.com/in/royal-byte-4020283aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/appiah-oforiwaa-rhoda",
     twitter: "https://x.com/royalbyte",
     instagram: "https://www.instagram.com/royal_byte_111"
   },
