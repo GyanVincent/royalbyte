@@ -3,21 +3,21 @@ import { useNavigate } from "react-router-dom";
 
 const footerLinks = {
   services: [
-    { name: "Website Development", href: "#services" },
-    { name: "Web Applications", href: "#services" },
-    { name: "Mobile Apps", href: "#services" },
-    { name: "UI/UX Design", href: "#services" },
-    { name: "Social Media Management", href: "#services" },
-    { name: "Event Photoshoots", href: "#services" },
-    { name: "Videography", href: "#services" },
-    { name: "Graphic Design", href: "#services" },
-    { name: "CCTV Installation", href: "#services" },
+    { name: "Website Development", href: "#/services" },
+    { name: "Web Applications", href: "#/services" },
+    { name: "Mobile Apps", href: "#/services" },
+    { name: "UI/UX Design", href: "#/services" },
+    { name: "Social Media Management", href: "#/services" },
+    { name: "Event Photoshoots", href: "#/services" },
+    { name: "Videography", href: "#/services" },
+    { name: "Graphic Design", href: "#/services" },
+    { name: "CCTV Installation", href: "#/services" },
   ],
   company: [
-    { name: "About Us", href: "#about" },
-    { name: "Our Team", href: "#team" },
+    { name: "About Us", href: "#/about" },
+    { name: "Our Team", href: "#/team" },
     { name: "Careers", href: "#", isNotAvailable: true },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "#/contact" },
   ],
   resources: [
     { name: "Blog", href: "#" },
@@ -47,8 +47,6 @@ const Footer = () => {
       navigate("/case-studies");
     } else if (resourceName === "Support") {
       navigate("/support");
-    } else {
-      alert(`${resourceName} is not available right now. Please check back later!`);
     }
   };
 
@@ -56,8 +54,12 @@ const Footer = () => {
     if (linkName === "Careers") {
       navigate("/careers");
     } else {
-      window.location.href = href;
+      window.location.hash = href;
     }
+  };
+
+  const handleServicesClick = (href: string) => {
+    window.location.hash = href;
   };
 
   const handlePrivacyPolicy = () => {
@@ -107,12 +109,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                  <button
+                    onClick={() => handleServicesClick(link.href)}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm text-left cursor-pointer"
                   >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -132,12 +134,12 @@ const Footer = () => {
                       {link.name}
                     </button>
                   ) : (
-                    <a
-                      href={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                    <button
+                      onClick={() => handleCompanyClick(link.name, link.href)}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm text-left cursor-pointer"
                     >
                       {link.name}
-                    </a>
+                    </button>
                   )}
                 </li>
               ))}
