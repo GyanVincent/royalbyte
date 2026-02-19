@@ -217,6 +217,10 @@ const Careers = () => {
     }, 100);
   };
 
+  const handleBackToHome = () => {
+    window.location.hash = "#/";
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
@@ -266,16 +270,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
           >
-            <Button
-              onClick={() => navigate("/")}
-              className="mb-6 bg-background/10 hover:bg-background/20 text-foreground border border-border/50"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-            
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
               Join Our <span className="text-secondary">Team</span>
             </h1>
@@ -649,12 +644,12 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
                 <Mail className="w-4 h-4 ml-2" />
               </Button>
               <Button
-                onClick={() => navigate("/support")}
-                variant="outline"
-                className="border-border hover:bg-primary/10"
-              >
-                Contact HR
-              </Button>
+                onClick={handleBackToHome}
+                className="mb-6 bg-background/10 hover:bg-background/20 text-foreground border border-border/50"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
             </div>
           </motion.div>
         </div>
