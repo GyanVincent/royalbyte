@@ -6,6 +6,10 @@ import { useNavigate } from "react-router-dom";
 const TermsOfService = () => {
   const navigate = useNavigate();
 
+  const handleBackToHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -199,10 +203,10 @@ const TermsOfService = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-center"
+            className="flex justify-center"
           >
             <Button
-              onClick={() => navigate("/")}
+              onClick={handleBackToHome}
               className="bg-gradient-royal hover:opacity-90 text-foreground font-semibold px-8 py-6 text-lg flex items-center gap-2"
             >
               <ArrowLeft className="w-5 h-5" />

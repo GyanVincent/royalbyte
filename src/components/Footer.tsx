@@ -58,7 +58,7 @@ const Footer = () => {
   };
 
   const handleServicesClick = (href: string) => {
-    window.location.hash = href;
+    navigate("/services");
   };
 
   const handlePrivacyPolicy = () => {
