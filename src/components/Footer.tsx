@@ -42,7 +42,9 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleResourceClick = (resourceName: string) => {
-    if (resourceName === "Case Studies") {
+    if (resourceName === "Blog" || resourceName === "Documentation") {
+      alert("Not available for now");
+    } else if (resourceName === "Case Studies") {
       navigate("/case-studies");
     } else if (resourceName === "Support") {
       navigate("/support");
@@ -51,9 +53,13 @@ const Footer = () => {
 
   const handleCompanyClick = (linkName: string, href: string) => {
     if (linkName === "Careers") {
-      navigate("/careers");
-    } else {
-      window.location.hash = href;
+      alert("Not available for now");
+    } else if (linkName === "About Us") {
+      navigate("#about");
+    } else if (linkName === "Our Team") {
+      navigate("#team");
+    } else if (linkName === "Contact") {
+      navigate("#contact");
     }
   };
 
@@ -108,12 +114,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <button
-                    onClick={() => handleServicesClick(link.href)}
-                    className="text-muted-foreground hover:text-foreground transition-colors text-sm text-left cursor-pointer"
-                  >
+                  <span className="text-muted-foreground text-sm">
                     {link.name}
-                  </button>
+                  </span>
                 </li>
               ))}
             </ul>
