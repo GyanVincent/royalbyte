@@ -271,7 +271,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-center">
               Join Our <span className="text-secondary">Team</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">

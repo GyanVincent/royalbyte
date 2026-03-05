@@ -1,23 +1,22 @@
 import { Crown, Linkedin, Twitter, Github, Instagram, MessageCircle, Youtube, Facebook, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 const footerLinks = {
   services: [
-    { name: "Website Development", href: "#/services" },
-    { name: "Web Applications", href: "#/services" },
-    { name: "Mobile Apps", href: "#/services" },
-    { name: "UI/UX Design", href: "#/services" },
-    { name: "Social Media Management", href: "#/services" },
-    { name: "Event Photoshoots", href: "#/services" },
-    { name: "Videography", href: "#/services" },
-    { name: "Graphic Design", href: "#/services" },
-    { name: "CCTV Installation", href: "#/services" },
+    { name: "Website Development", href: "#" },
+    { name: "Web Applications", href: "#ServicesSection.tsx" },
+    { name: "Mobile Apps", href: "#services" },
+    { name: "UI/UX Design", href: "#services" },
+    { name: "Social Media Management", href: "#services" },
+    { name: "Event Photoshoots", href: "#services" },
+    { name: "Videography", href: "#services" },
+    { name: "Graphic Design", href: "#services" },
+    { name: "CCTV Installation", href: "#services" },
   ],
   company: [
-    { name: "About Us", href: "#/about" },
-    { name: "Our Team", href: "#/team" },
+    { name: "About Us", href: "#about" },
+    { name: "Our Team", href: "#team" },
     { name: "Careers", href: "#", isNotAvailable: true },
-    { name: "Contact", href: "#/contact" },
+    { name: "Contact", href: "#contact" },
   ],
   resources: [
     { name: "Blog", href: "#" },

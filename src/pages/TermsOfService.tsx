@@ -168,7 +168,7 @@ const TermsOfService = () => {
                     </div>
                     <div>
                       <p className="text-sm font-medium text-foreground">Email</p>
-                      <p className="text-muted-foreground">info@royalbyte.com</p>
+                      <p className="text-muted-foreground">royalbytetech@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
