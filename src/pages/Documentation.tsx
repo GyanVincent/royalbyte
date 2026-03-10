@@ -227,7 +227,7 @@ const Documentation = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
+      {/* Hero Section*/ }
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -252,7 +252,7 @@ const Documentation = () => {
               Comprehensive guides, API references, and tutorials to help you build amazing applications with Royal Byte Tech.
             </p>
             
-            {/* Search Bar */}
+            {/* Search Bar*/ }
             <div className="max-w-2xl mx-auto relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
@@ -293,7 +293,7 @@ const Documentation = () => {
         </div>
       </section>
 
-      {/* Documentation Sections */}
+      {/* Documentation Sections*/ }
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -347,7 +347,7 @@ const Documentation = () => {
         </div>
       </section>
 
-      {/* Code Examples */}
+      {/* Code Examples*/ }
       <section className="py-20 bg-gradient-to-b from-transparent to-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -404,7 +404,7 @@ const Documentation = () => {
         </div>
       </section>
 
-      {/* Resources */}
+      {/* Resources*/ }
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -440,7 +440,7 @@ const Documentation = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section*/ }
       <section className="py-20 bg-gradient-to-b from-transparent to-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -479,3 +479,4 @@ const Documentation = () => {
 };
 
 export default Documentation;
+

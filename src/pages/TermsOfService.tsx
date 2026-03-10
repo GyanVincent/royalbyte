@@ -13,6 +13,22 @@ const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        {/* Back to Home Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto mb-8"
+        >
+          <Button
+            onClick={handleBackToHome}
+            className="bg-gradient-royal hover:opacity-90 text-foreground font-semibold px-8 py-6 text-lg flex items-center gap-2"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            Back to Home
+          </Button>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -197,22 +213,6 @@ const TermsOfService = () => {
               </div>
             </motion.section>
           </div>
-
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex justify-center"
-          >
-            <Button
-              onClick={handleBackToHome}
-              className="bg-gradient-royal hover:opacity-90 text-foreground font-semibold px-8 py-6 text-lg flex items-center gap-2"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              Back to Home
-            </Button>
-          </motion.div>
         </motion.div>
       </div>
     </div>

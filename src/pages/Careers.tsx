@@ -262,7 +262,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
+      {/* Hero Section*/ }
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -296,7 +296,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
         </div>
       </section>
 
-      {/* Why Join Us */}
+      {/* Why Join Us*/ }
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -377,7 +377,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
         </div>
       </section>
 
-      {/* Job Openings */}
+      {/* Job Openings*/ }
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -496,7 +496,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
         </div>
       </section>
 
-      {/* Application Form */}
+      {/* Application Form*/ }
       <section id="application-form" className="py-20 bg-gradient-to-b from-transparent to-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -614,7 +614,7 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section*/ }
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -659,3 +659,4 @@ Resume: ${formData.resume ? formData.resume.name : "No file uploaded"}
 };
 
 export default Careers;
+
