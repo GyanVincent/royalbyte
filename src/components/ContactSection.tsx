@@ -142,7 +142,7 @@ const ContactSection = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="p-8 rounded-2xl bg-gradient-card border border-border">
-              <h3 className="font-display text-2xl font-semibold mb-6 text-foreground">Send us a message</h3>
+              <h3 className="font-display text-2xl font-semibold mb-6 text-white">Send us a message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
