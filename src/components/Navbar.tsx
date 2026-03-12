@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Crown } from "lucide-react";
+import { Menu, X, Crown, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -18,6 +19,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { theme, toggleTheme, getLogo } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,7 +81,7 @@ const Navbar = () => {
           >
             <div className="relative">
               <img 
-                src="logo.png" 
+                src={getLogo()}
                 className="w-32 h-32 object-contain"
               />
             </div>
@@ -101,6 +103,27 @@ const Navbar = () => {
                 {link.name}
               </motion.a>
             ))}
+          </div>
+
+          {/* Theme Toggle */}
+          <div className="hidden md:flex items-center">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Button
+                onClick={toggleTheme}
+                variant="ghost"
+                size="icon"
+                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              >
+                {theme === 'dark' ? (
+                  <Sun className="w-5 h-5" />
+                ) : (
+                  <Moon className="w-5 h-5" />
+                )}
+              </Button>
+            </motion.div>
           </div>
 
           {/* CTA Button */}
@@ -142,6 +165,22 @@ const Navbar = () => {
                   {link.name}
                 </button>
               ))}
+              {/* Theme Toggle in Mobile Menu */}
+              <div className="flex items-center justify-between py-2">
+                <span className="text-foreground">Theme</span>
+                <Button
+                  onClick={toggleTheme}
+                  variant="ghost"
+                  size="icon"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+                >
+                  {theme === 'dark' ? (
+                    <Sun className="w-5 h-5" />
+                  ) : (
+                    <Moon className="w-5 h-5" />
+                  )}
+                </Button>
+              </div>
               <Button
                 onClick={() => scrollToSection("#contact")}
                 className="bg-gradient-royal hover:opacity-90 text-foreground font-semibold mt-4"

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Shield, Lock, Eye, Database, ArrowLeft, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
@@ -11,6 +12,11 @@ const PrivacyPolicy = () => {
     // Scroll to top of page
     window.scrollTo(0, 0);
   };
+
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">

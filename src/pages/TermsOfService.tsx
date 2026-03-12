@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FileText, Shield, Users, AlertCircle, ArrowLeft, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const TermsOfService = () => {
   const navigate = useNavigate();
@@ -11,6 +12,11 @@ const TermsOfService = () => {
     // Scroll to top of page
     window.scrollTo(0, 0);
   };
+
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">

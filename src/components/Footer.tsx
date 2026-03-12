@@ -1,5 +1,11 @@
-import { Crown, Linkedin, Twitter, Github, Instagram, MessageCircle, Youtube, Facebook, Phone } from "lucide-react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube, ArrowUpRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useTheme } from "@/contexts/ThemeContext";
+import { Crown, Linkedin, Twitter, Github, Instagram as InstagramIcon, MessageCircle, Youtube as YoutubeIcon, Facebook as FacebookIcon, Phone as PhoneIcon } from "lucide-react";
+
 const footerLinks = {
   services: [
     { name: "Website Development", href: "#" },
@@ -40,6 +46,7 @@ const socialLinks = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
+  const { getLogo } = useTheme();
 
   const handleResourceClick = (resourceName: string) => {
     if (resourceName === "Blog" || resourceName === "Documentation") {
@@ -83,7 +90,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <a href="#home" className="flex items-center gap-2 mb-4">
               <img 
-                src="logo.png" 
+                src={getLogo()}
                 className="w-24 h-24 object-contain"
               />
             </a>

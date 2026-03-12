@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Code2, Smartphone, Palette, Cloud, Wrench, Share2, Camera, Video, Image, Shield, ArrowUpRight } from "lucide-react";
+import { Globe, Code2, Smartphone, Palette, Cloud, Wrench, Share2, Camera, Video, Image, Shield, Plane, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
@@ -68,6 +68,12 @@ const services = [
     description: "Professional security camera installation and surveillance system setup for your premises.",
     features: ["Site Assessment", "Installation", "Remote Monitoring"],
   },
+  {
+    icon: Plane,
+    title: "Drone Shoot",
+    description: "Aerial photography and videography services using professional drones for stunning aerial shots.",
+    features: ["Aerial Photography", "4K Video", "Survey Mapping"],
+  },
 ];
 
 const containerVariants = {
@@ -135,14 +141,14 @@ const ServicesSection = () => {
               className="group relative cursor-pointer"
               onClick={scrollToContact}
             >
-              <div className="h-full p-8 rounded-2xl bg-gradient-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+              <div className="h-full p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
                 {/* Icon */}
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
 
                 {/* Content */}
-                <h3 className="font-display text-xl font-semibold mb-3 flex items-center gap-2">
+                <h3 className="font-display text-xl font-semibold mb-3 flex items-center gap-2 text-foreground">
                   {service.title}
                   <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-secondary" />
                 </h3>
@@ -153,7 +159,7 @@ const ServicesSection = () => {
                   {service.features.map((feature) => (
                     <span
                       key={feature}
-                      className="text-xs px-3 py-1 rounded-full bg-muted text-muted-foreground"
+                      className="text-xs px-3 py-1 rounded-full bg-muted text-foreground border border-border"
                     >
                       {feature}
                     </span>

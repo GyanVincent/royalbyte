@@ -88,7 +88,7 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 * index }}
-                className="p-6 rounded-2xl bg-gradient-card border border-border text-center"
+                className="p-6 rounded-2xl bg-card border border-border text-center"
               >
                 <div className="font-display text-4xl md:text-5xl font-bold text-gradient-royal mb-2">
                   {stat.value}
@@ -120,12 +120,12 @@ const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="p-6 rounded-2xl bg-gradient-card border border-border hover:border-secondary/50 transition-colors group"
+              className="p-6 rounded-2xl bg-card border border-border hover:border-secondary/50 transition-colors group"
             >
               <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
                 <value.icon className="w-6 h-6 text-secondary" />
               </div>
-              <h4 className="font-display text-lg font-semibold mb-2">{value.title}</h4>
+              <h4 className="font-display text-lg font-semibold mb-2 text-foreground">{value.title}</h4>
               <p className="text-muted-foreground text-sm">{value.description}</p>
             </motion.div>
           ))}
